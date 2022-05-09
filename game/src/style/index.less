@@ -1,0 +1,72 @@
+
+@bg-color:#fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font:bold 14px 
+}
+
+//设置主窗口样式
+#main{
+    width: 360px;
+    height: 420px;
+    background-color:skyblue ;
+    margin: 100px auto;
+    border: 5px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+           
+    //游戏区域
+    #stage{
+        position: relative;
+        width: 304px;
+        height: 304px;
+        border: 2px solid black;
+        background-color: #fff;
+
+        //蛇的模型
+        #snake{
+            &>div{
+                width: 10px;
+                height: 10px;
+                background-color: #000;
+                border: 1px solid @bg-color;
+
+                //开启绝对定位
+                position: absolute;
+            }
+        }
+
+        //蛇的食物
+         #food{
+                width: 10px;
+                height: 10px;
+                background-color: pink;
+
+                border: 1px solid @bg-color;
+
+                //开启绝对定位
+                position: absolute;
+                left: 30px;
+                top: 30px;
+            }
+    }
+
+    //游戏分数区域
+    #scoreArea{
+        font-size: 14px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: bold 14px;
+}
+#main {
+  width: 360px;
+  height: 420px;
+  background-color: skyblue ;
+  margin: 100px auto;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#main #stage {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  border: 2px solid black;
+  background-color: #fff;
+}
+#main #stage #snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid #fff;
+  position: absolute;
+}
+#main #stage #food {
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+#main #scoreArea {
+  font-size: 14px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
